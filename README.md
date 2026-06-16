@@ -1,10 +1,7 @@
 # Policy Lookup Agent
 
-A minimal educational project that shows how an AI agent, an MCP server, tools, prompts, and a simple data source work together.
+A minimal project that shows how an AI agent, an MCP server, tools, prompts, and a simple data source work together.
 
-## What Is an Agent?
-
-An **agent** is a program that uses a large language model (LLM) to decide what to do next. Instead of only generating text, the agent can call **tools** to look up information, then use those results to answer the user.
 
 In this project, `agent.py` is the agent. It:
 
@@ -13,11 +10,6 @@ In this project, `agent.py` is the agent. It:
 3. Lets the LLM choose when to call MCP tools
 4. Returns the final answer
 
-## What Is an MCP Server?
-
-**MCP** (Model Context Protocol) is a standard way for AI applications to connect to external capabilities like tools, prompts, and data sources.
-
-An **MCP server** exposes those capabilities in a consistent format. Here, the MCP server lives in `mcp_server/server.py` and runs as a separate process. The agent connects to it over stdio (standard input/output).
 
 ## Available Tools
 
